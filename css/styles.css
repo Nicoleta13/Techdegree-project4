@@ -114,7 +114,7 @@ a {
 .btn--default {
   background-color: #05eaff; }
 
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .container {
     width: 75%; }
 
