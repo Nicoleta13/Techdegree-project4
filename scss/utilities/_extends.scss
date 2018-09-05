@@ -1,0 +1,36 @@
+  // Images
+  %frame {
+    align-self:center;
+    padding-top:15px;
+    padding-bottom: 15px;
+  }
+
+  // Headlines
+  %headline--primary {
+    color: $color-primary;
+    text-align: center;
+  }
+
+  // links
+  %link {
+    text-decoration: none;
+    color: $color-text;
+    display: block;
+  }
+
+  %link-class {
+      display: flex;
+      justify-content: center;
+  }
+
+  // Nav items
+  %hover {
+    background-color: $color-primary;
+    border-radius: 5px;
+    color: $color-hover;
+  }
+
+  //Text-transform
+  %text {
+    text-transform: uppercase;
+  }

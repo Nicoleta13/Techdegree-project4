@@ -1,19 +1,38 @@
-//Color variables
-$color-primary: #33F5CB;   //green
-$color-link: #05eaff;      //lightblue
-$color-text: #616161;      //grey
-$color-text-lighter: lighten($color-text, 25%);
-$color-hover: white;
+  //------------------Color variables
+  $color-primary: #33F5CB;   //green
+  $color-text: #616161;      //grey
+  $color-text-lighter: lighten($color-text, 25%);  //light grey
+  $color-hover: white;
+
+  //Buttons' colors
+  $btn-colors: (
+    'default': #05eaff,     //blue
+    'success': #38B056,     //dark green
+    'error': #F25771,       //red
+    'warning': #F57A49,     //orange
+    'info': #AF7BD1,        //violet
+  );
 
 
+  //Grids' colors
+  $grid-colors: (
+    '3': lighten(map-get($btn-colors, 'info'), 15%),      //light violet
+    '4': lighten(map-get($btn-colors, 'default'), 25%),   //light blue
+    '5': lighten(map-get($btn-colors, 'success'), 25%),   //light green button
+    '6': darken(map-get($btn-colors, 'default'), 15%),    //dark blue
+    '7': lighten(map-get($btn-colors, 'error'), 10%),     //light red
+    '8': lighten(map-get($btn-colors, 'warning'), 10%),   //light orange
+    '12': lighten($color-primary, 15%),                   //lighten blue
+  );
 
 
+  //------------------Font variables
+  $font-stack-primary: "Titillium Web", sans-serif ;
+  $font-stack-secondary: "IBM Plex Mono", monospace;
 
 
-//Font variables
-$font-stack-primary: "Titillium Web", sans-serif ;
-$font-stack-secondary: "IBM Plex Mono", monospace;
-$font-blockquote: "";
-
-
-//Breakpoint variables
+  //------------------Breakpoint variables
+  $breakpoints: (
+  's': 481px,
+  'l': 1440px,
+  );

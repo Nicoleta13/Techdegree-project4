@@ -1,0 +1,12 @@
+  .nav {
+    font-family: $font-stack-secondary;
+    list-style: none;
+      &__item {
+        text-align: center;
+        @include padding-y(13px, 13px);
+        @include nav;
+          &:hover {
+          @extend %hover;
+        }
+      }
+    }

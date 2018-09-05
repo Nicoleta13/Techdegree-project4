@@ -1,0 +1,95 @@
+  //-------------------Mixins
+  @mixin padding-y($top, $bottom) {
+    padding: {
+              top: $top;
+              bottom: $bottom;
+    }
+  }
+
+  @mixin padding-x($left, $right) {
+    padding: {
+              left: $left;
+              right: $right;
+    }
+  }
+
+  @mixin margin-x($left, $right) {
+    margin: {
+              left: $left;
+              right: $right;
+    }
+  }
+
+  @mixin margin-y($top, $bottom) {
+    margin: {
+              top: $top;
+              bottom: $bottom;
+    }
+  }
+
+
+  //Flexbox settings
+  @mixin flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  //Media queries
+
+  @mixin container-width {
+    width: 85%;
+    @media (min-width: map-get($breakpoints, 's' )) {
+      width: 80%;
+    }
+    @media (min-width: map-get($breakpoints, 'l' )) {
+      width: 75%;
+    }
+  }
+
+
+  @mixin form {
+    @media (min-width: map-get($breakpoints, 's' )) {
+      width: 60%;
+      align-self: center;
+    }
+    @media (min-width: map-get($breakpoints, 'l')) {
+      width: 100%;
+    }
+  }
+
+
+  @mixin grid {
+    @media (min-width: map-get($breakpoints, 'l')) {
+    flex: 1 100%;
+    }
+  }
+
+
+  @mixin flex-l {
+    @media (min-width: map-get($breakpoints, 'l')) {
+    flex-direction: row;
+    justify-content: space-between;
+    }
+  }
+
+  @mixin flex-s {
+    @media (min-width: map-get($breakpoints, 's')) {
+    flex-direction: row;
+    justify-content: space-around;
+    }
+  }
+
+
+  @mixin nav {
+    @media (min-width: map-get($breakpoints, 'l')) {
+      @include margin-x(10px, 10px);
+    }
+  }
+
+
+  @mixin headline {
+    @media (min-width: map-get($breakpoints, 'l')) {
+      text-align: left;
+    }
+  }

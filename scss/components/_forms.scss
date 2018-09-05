@@ -1,0 +1,24 @@
+  .form {
+    @include flex;
+    @media (min-width: map-get($breakpoints, 'l')) {
+      margin-left: 15px;
+    }
+    &__input {
+      border: none;
+      background-color: $color-primary;
+      height: 15px;
+      font-size: .8em;
+      @extend .form__label--hidden;
+      &:focus {
+      outline: 0;
+      border: none;
+      }
+      &::placeholder {
+        opacity: 0;
+      }
+    }
+    &__label--hidden {
+      @include margin-y(8px, 8px);
+      @include form;
+    }
+  }

@@ -1,0 +1,36 @@
+  a {
+  @extend %link;
+  }
+
+  .blockquote {
+    font-style: italic;
+    border-left: solid 8px $color-primary;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 15px;
+    @include margin-x(20px, 20px)
+  }
+
+  .container {
+    font-family: $font-stack-primary;
+    line-height: 1.3;
+    @include container-width;
+    margin: 0 auto;
+    color: $color-text;
+    font-size: 1em;
+  }
+
+  .headline--primary{
+    @extend %headline--primary;
+    @include headline;
+  }
+
+  .headline--secondary {
+    color: $color-text-lighter;
+  }
+
+  .link {
+    color: map-get($btn-colors, 'default');
+    @extend %link-class;
+    @include flex-s;
+  }

@@ -1,0 +1,9 @@
+  .img--avatar {
+    @extend %frame;
+  }
+
+  .img--frame {
+    @include padding-x(15px, 15px);
+    @extend .img--avatar;
+    border: solid 1px $color-text-lighter;
+    }

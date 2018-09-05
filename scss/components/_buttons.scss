@@ -1,0 +1,10 @@
+.theme__colors {
+  @include margin-x(5px, 5px);
+  @include padding-y(5px, 3px);
+  @extend .form__label--hidden;
+  color: $color-hover;
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  text-align: center;
+}

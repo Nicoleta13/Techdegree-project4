@@ -1,0 +1,25 @@
+  .grid {
+    &__row {
+    @include padding-y(15px, 15px);
+    }
+    &__col--6 {
+      @include margin-x(10px, 10px);
+      @include grid;
+    }
+    &__col--12 {
+      @include grid;
+    }
+    &__col--12 .theme__colors {
+      @extend %text;
+    }
+  }
+
+
+  .grid__col--6,
+  .grid__col--9,
+  .grid__col--12,
+  .grid__row,
+  .nav {
+    @include flex;
+    @include flex-l;
+  }
