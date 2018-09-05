@@ -29,13 +29,13 @@
 
 
   //Flexbox settings
-  @mixin flex {
+  @mixin flexbox {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
 
-  //Media queries
+  //Media query mixins
 
   @mixin container-width {
     width: 85%;

@@ -20,6 +20,6 @@
   .grid__col--12,
   .grid__row,
   .nav {
-    @include flex;
+    @include flexbox;
     @include flex-l;
   }

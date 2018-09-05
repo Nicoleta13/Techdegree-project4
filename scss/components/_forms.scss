@@ -1,5 +1,5 @@
   .form {
-    @include flex;
+    @include flexbox;
     @media (min-width: map-get($breakpoints, 'l')) {
       margin-left: 15px;
     }
